@@ -1,0 +1,24 @@
+{
+    "title":"pharmacy",
+    "login":"Login",
+    "register":"Register",
+    "number":"Number",
+    "password":"Password",
+    "name":"Name",
+    "donthaveaccount":"Don't Have An Account ? Register",
+    "youhaveaccount":"You have an account ?Login",
+    "account":"Account",
+    "setting":"Setting",
+    "about":"About Us",
+    "logout":"Logout",
+    "user1":"User 1",
+    "language":"language",
+    "ar":"Arabic",
+    "en":"English",
+    "category":"Category",
+    "search":"Search",
+    "exit":"Exit",
+    "order":"Order",
+    "report":"Report"
+
+}

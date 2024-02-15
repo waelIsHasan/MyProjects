@@ -1,0 +1,115 @@
+
+/*import 'package:flutter/material.dart';
+
+void main() {
+  runApp(ItemAdderApp());
+}
+
+class ItemAdderApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'Item Adder',
+      theme: ThemeData(
+        primarySwatch: Colors.blue,
+      ),
+      home: ItemAdderScreen(),
+    );
+  }
+}
+
+class ItemAdderScreen extends StatefulWidget {
+  const ItemAdderScreen({super.key});
+
+  @override
+  _ItemAdderScreenState createState() => _ItemAdderScreenState();
+}
+
+class _ItemAdderScreenState extends State<ItemAdderScreen> {
+  List<String> items = [];
+  String? Value;
+  void addItem(String item) {
+    setState(() {
+      items.add(item);
+    });
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('Item Adder'),
+      ),
+      body: Column(
+        children: [
+          Expanded(
+            child: ListView.builder(
+              itemCount: items.length,
+              itemBuilder: (context, index) {
+                return ListTile(
+                  title: Text(items[index]),
+                );
+              },
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsets.all(16.0),
+            child: Row(
+              children: [
+                Expanded(
+                  child: TextField(
+                    decoration:const InputDecoration(
+                      labelText: 'Item',
+                    ),
+                    onSubmitted: (value) {
+                      addItem(value);
+                    },
+                  ),
+                ),
+                SizedBox(width: 16.0),
+                ElevatedButton(
+                  onPressed: () {
+                    showDialog(
+                      context: context,
+                      builder: (context) {
+                        return AlertDialog(
+                          title:const Text('Add Item'),
+                          content: TextField(
+                            decoration:const InputDecoration(
+                              labelText: 'Item',
+                            ),
+                            onSubmitted: (value) {
+                              Value=value;
+                              addItem(value);
+                              Navigator.pop(context);
+                            },
+                          ),
+                          actions:[
+                            TextButton(
+                              onPressed: () {
+                                Navigator.pop(context);
+                              },
+                              child:const Text('Cancel'),
+                            ),
+                            ElevatedButton(
+                              onPressed: () {
+                                addItem(Value!);
+                                Navigator.pop(context);
+                              },
+                              child: Text('Add'),
+                            ),
+                          ],
+                        );
+                      },
+                    );
+                  },
+                  child: Text('Add'),
+                ),
+              ],
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+}*/
